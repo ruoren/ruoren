@@ -22,7 +22,7 @@ class Quiz {
         return this.questions[this.questionIndex];
       }
       isCorrectAnswer(choice){
-   			return this.answer === choice;
+   			return this.answer == choice;
     	}
       guess(answer) {
         if(this.getQuestion().isCorrectAnswer(answer)) {
