@@ -40,6 +40,9 @@ function guess(id, guess) {
     }
 };
 
+var quiz = new Quiz(questions);
+populate();
+
 function populate() {
    	 var element = document.getElementById("question");
    	 element.innerHTML = quiz.getQuestion().text;
@@ -51,6 +54,3 @@ function populate() {
    		 guess("btn" + i, choices[i]);
    	 }
 };
-
-var quiz = new Quiz(questions);
-populate();
