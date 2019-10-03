@@ -56,8 +56,12 @@ span.hnav {
 
 .navright{
   color: #FFE9D1;
-  margin: 22px 20px 0px 0px;
+  margin: 20px 30px 0px 0px;
   float: right;
+}
+
+.navright:hover{
+  color: #AF7A40;
 }
 
 /*Link formatting*/
@@ -117,6 +121,11 @@ button.headerbutton {
   grid-column-end: 10;
   grid-row-start: 5;
   grid-row-end: 6;
+}
+
+.headerbutton:hover{
+  color: #FFE9D1;
+  background-color: #1D0A08;
 }
 
 
