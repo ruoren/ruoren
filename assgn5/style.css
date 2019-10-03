@@ -57,6 +57,7 @@ span.hnav {
 .navright{
   color: #FFE9D1;
   margin: 15px 20px 0px 0px;
+  float: right;
 }
 
 /*Link formatting*/
