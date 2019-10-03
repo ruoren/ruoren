@@ -54,6 +54,12 @@ span.hnav {
   padding-top: 5px;
 }
 
+.navright{
+  float:right;
+  display: inline-block;
+  color: #FFE9D1;
+}
+
 /*Link formatting*/
 span.hnav:hover {
   color: #AF7A40;
