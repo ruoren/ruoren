@@ -23,7 +23,7 @@
   /*grid-template-columns: 40px 50px auto 50px 40px;*/
   grid-template-columns: 1fr repeat(12, minmax(75px, 1fr)) 1fr;
   grid-gap: 24px;
-  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   position: absolute;
   top: 80px;
 }
@@ -283,6 +283,7 @@ select {
   grid-row-end: 4;
 }
 .cartitem {
+  visibility: hidden;
   grid-column-start: 4;
   grid-column-end: 7;
   grid-row-start: 2;
@@ -338,4 +339,23 @@ select {
   grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 4;
+}
+
+.imgcaro{
+grid-column-start: 5;
+grid-column-end: 11;
+grid-row-start: 10;
+grid-row-end: 15;
+}
+.leftbutt{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+.rightbutt{
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 10;
+  grid-row-end: 10;
 }
