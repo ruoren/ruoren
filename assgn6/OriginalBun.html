@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Arsenal|Darker+Grotesque|Mali&display=swap" rel="stylesheet">
 
   </head>
-  <body>
+  <body onload="loadPP()">
     <nav>
       <a href="index.html"><span class="hnav">Home</span></a>        <span class="hnav"></span>
       <a href="Buns.html"><span class="hnav active">Buns</span></a>
@@ -73,10 +73,10 @@
           <button class="cartbutton" type="button" onclick="originaladd()">Add to Cart</button>
         <!--formaction="Buns.html"-->
         </form>
-
-
-
       </div>
+      <button class="leftbutt" onclick="updateCar(1)"><</button>
+      <img src="https://cdn.glitch.com/71292837-6f1e-4027-a15a-135eda4dbd41%2FOriginal%20bun%20large.png?v=1569624125902" class="imgcaro" id="imgcaro">
+      <button class="rightbutt" onclick="updateCar(-1)">></button>
     </div>
 
   </body>
