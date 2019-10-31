@@ -212,7 +212,8 @@ function deleteItem(i){
 //myButtonOriginal function onclick {}
 
 function updateCar(num) {
-  var imgcar= ["https://cdn.glitch.com/71292837-6f1e-4027-a15a-135eda4dbd41%2FOriginal%20bun%20large.png?v=1569624125902","https://cdn.glitch.com/0711cce2-3511-41d0-a93f-48a3c98c8b83%2Fbun4.png?v=1570065664718"]
+
+  var imgcar= ["https://cdn.glitch.com/71292837-6f1e-4027-a15a-135eda4dbd41%2FOriginal%20bun%20large.png?v=1569624125902","https://cdn.glitch.com/0711cce2-3511-41d0-a93f-48a3c98c8b83%2Fbun4.png?v=1570065664718","https://cdn.glitch.com/71292837-6f1e-4027-a15a-135eda4dbd41%2FOriginal%20bun%20large.png?v=1569624125902","https://cdn.glitch.com/0711cce2-3511-41d0-a93f-48a3c98c8b83%2Fbun4.png?v=1570065664718"];
 }
 
 
