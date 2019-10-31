@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Bun Bun Bakeshop</title>
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Arsenal|Darker+Grotesque|Mali&display=swap" rel="stylesheet">
 
   </head>
-  <body>
+  <body onload="loadCart()">
     <nav>
       <a href="index.html"><span class="hnav">Home</span></a>
       <span class="hnav"></span>
@@ -28,14 +29,14 @@
       <a href="Account.html"><span class="hnav">Account</span></a>
       <span class="navright"><a href="Cart.html"><i class="material-icons">shopping_cart</i></a><p id="carticonnum">1</p></span>
     </nav>
-    <div class="containerpp">
+    <div class="containerpp" id="containerpp">
       <h2 class="titlepp">Checkout</h2>
-      <img class="cartimg" src="https://cdn.glitch.com/0711cce2-3511-41d0-a93f-48a3c98c8b83%2Fblackberrybunsmall.png?v=1571774610297">
-      <div class="cartitem">
-        <h3>Original Bun</h3>
+      <img class="cartimg" id="cartimg">
+      <div class="cartitem" id="cartitem">
+        <h3 id="originalname"></h3>
         <p>Frosting</p>
         <select required id="originalfrost" onchange="updateProductImg()">
-          <option value="1" selected>None</option>
+          <option value="1">None</option>
           <option value="2">Chocolate</option>
           <option value="3">Milk</option>
           <option value="4">Sugar</option>
@@ -43,18 +44,18 @@
         <br>
         <p>Quantity</p>
         <select required id="originalnum" onchange="updateProductPrice()">
-          <option value="1" selected>1</option>
+          <option value="1">1</option>
           <option value="2">3</option>
           <option value="3">6</option>
           <option value="4">12</option>
         </select>
-        <p><a>Duplicate</a> | <a>Remove</a> | Price:$22.00<p>
+        <p><a>Duplicate</a> | <a onclick="deleteItem(0)">Remove</a> | Price:$</p>
       </div>
       <div class="cartinfo">
-        <p>Order Total: $22.00</p>
+        <p id="priceorder">Order Total: $22.00</p>
         <p>Delivery: $</p>
-        <p>Tax: $2.55</p>
-        <h3>Estimated Total: $24.55</h3>
+        <p id="pricetax">Tax: $2.55</p>
+        <h3 id="pricetotal">Estimated Total: $24.55</h3>
         <button class="checkoutbutton" type="button">Checkout</button>
 
       </div>
