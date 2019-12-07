@@ -1,0 +1,272 @@
+.img-fluid. max-width: 80%;
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 19px;
+  line-height: 20pt;
+  letter-spacing: .8px;
+  color:#1a1b1c;
+}
+
+.navbar {
+  background: #FFFFFF;
+}
+
+nav {
+  position: -webkit-sticky;
+}
+
+.navy{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 19px;
+  line-height: 40pt; /*spacing between lines*/
+  letter-spacing: .8px;
+  color:#778899;
+  font-weight: lighter;
+}
+h3{
+  text-transform: uppercase;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #5C657C;
+}
+h2{
+  text-transform: uppercase;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #5C657C;
+}
+
+h1{
+  text-transform: uppercase;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #5C657C;
+}
+
+.backgroundpic{
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  z-index:-999;
+  transition: 0.9s all;
+}
+.changeColor {
+   background: black;
+}
+.logoanime{
+  -webkit-animation-name: logofadein; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: logofadein;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes logofadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes logofadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.uxheader {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  letter-spacing: 6px;
+  color:#FFFFFF;
+}
+
+.uxheader2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  letter-spacing: 6px;
+  color:#1a1b1c;
+  text-align: center;
+}
+
+.path {
+  stroke-width:2;
+  stroke:#FFFFFF;
+  fill: #FFFFFF;
+  width: 50%;
+  /* stroke-dasharray: 100;
+  animation: dash 5s linear; */
+  /* -webkit-animation-name: logofadein;
+  -webkit-animation-duration: 5s;
+  animation-name: logofadein;
+  animation-duration: 5s; */
+}
+.linedraw{
+  position: relative;
+  left: 0px;
+  top: 90px;
+  width: inherit;
+}
+
+.aboutrotate {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color:#FFFFFF;
+  top: 50%;
+}
+
+
+
+/*https://codepen.io/bewley/pen/revRQv*/
+/**/
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  color: #fff;
+}
+.arrow {
+  /* bottom: 0;
+  left: 50%; */
+  /* margin-left: -20px; */
+  width: 40px;
+  height: 60px;
+  z-index: 5;
+  padding-left: 50%;
+  transform: translate(-20px);
+
+  /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.container {
+  position: relative;
+}
+
+.textoverlay{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -50%);
+  color: white;
+}
+
+.textoverlay1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+}
+
+.textoverlay2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+}
+
+
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/*This creates the hover effect with the new image*/
+.card1{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.card1:hover{
+  /* background-image: url("anatomageprojects2.png"); */
+  filter: saturate(20%) brightness(40%) contrast(94%);
+}
+
+.card2:hover{
+  background-image: url("https://cdn.glitch.com/8f263c46-0c7d-4d1c-b334-dee18e93948b%2FOrderly_hover.png?v=1561366242798");
+}
+
+#testoverlay{
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  width: 100%
+}
+
+.fa
+  {
+    cursor:pointer;
+  }
+
+.activenav{
+  text-decoration: underline;
+}
