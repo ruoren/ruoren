@@ -52,7 +52,7 @@ h1{
   top:0px;
   left:0px;
   /* height:100%; */
-  width:100%;
+  /* width:100%; */
   z-index:-999;
   transition: 0.9s all;
 }
