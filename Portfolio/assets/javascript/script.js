@@ -440,6 +440,13 @@ $(document).ready(function (){
   });
 });
 
+$(document).ready(function (){
+  $("#scroll2").click(function (){
+    $('body').animate({
+      scrollTop: $("#scrollhere2").offset().top
+      }, 2000);
+  });
+});
 
 //changing the images on the projects page
 $(".card2").hover(function(){
