@@ -206,6 +206,7 @@ i {
   left: 45%;
   transform: translate(-40%, -50%);
   color: white;
+  pointer-events:none;
 }
 
 .textoverlay1{
