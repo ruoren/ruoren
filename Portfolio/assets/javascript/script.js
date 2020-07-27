@@ -491,3 +491,8 @@ $(".card1").hover(function(){
         image.fadeIn(200);
     });
 });
+
+
+$('#original_l').css('min-height', $("#original_r").height());
+console.log($("#original_r").height());
+console.log($("#original_l").height());
