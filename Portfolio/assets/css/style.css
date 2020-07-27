@@ -247,6 +247,14 @@ i {
   border-radius: 100%;
 }
 
+.carousel-indicators-black{
+  background-color: black;
+}
+
+.carousel-control-next-icon {
+url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
+}
+
 /*This creates the hover effect with the new image*/
 .card1{
   -webkit-transition: all .3s ease-in-out;
