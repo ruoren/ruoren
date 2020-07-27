@@ -8,6 +8,10 @@ p {
   color:#1a1b1c;
 }
 
+b {
+  font-weight: bold; /*700*/
+}
+
 .navbar {
   background: #FFFFFF;
 }
@@ -30,6 +34,7 @@ h3{
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
+  font-size: 1.5rem;
 }
 h2{
   text-transform: uppercase;
@@ -37,6 +42,7 @@ h2{
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
+  font-size: 2.5rem;
 }
 
 h1{
@@ -45,6 +51,7 @@ h1{
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
+  font-size: 3.75rem;
 }
 
 .backgroundpic{
@@ -288,4 +295,43 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+.rotate {
+  transform-origin: 0px 0px;
+  transform: rotate(90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.navpad {
+  padding: 150% 0%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 99;
+  top: 10%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
