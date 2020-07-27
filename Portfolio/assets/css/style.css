@@ -8,8 +8,8 @@ p {
   color:#1a1b1c;
 }
 
-b {
-  font-weight: bold; /*700*/
+li {
+  padding-bottom: 10px;
 }
 
 .navbar {
@@ -334,4 +334,58 @@ button:hover {
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+ .cell {
+    position: static;
+  }
+  .blklft {
+    left: 0;
+    right: 50%;
+    padding-left: calc((100% - 1170px) / 2);
+  }
+  .blkrt {
+    left: 50%;
+    right: 0;
+    padding-left: calc((100% - 1170px) / 2);
+  }
+}
+
+/*added for test*/
+body {
+    overflow-x: hidden;
+}
+
+/* only apply on screens over 576px -- the `sm` breakpoint */
+@media (min-width: 576px) {
+    .abs-right {
+        position: absolute;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .abs-left {
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .of {
+        /* optional to reprevent image resize*/
+        /* object-fit: fit; */
+    }
+}
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #E3BFC9 50%);
 }
