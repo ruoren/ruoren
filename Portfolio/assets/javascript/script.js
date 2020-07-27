@@ -397,12 +397,8 @@ window.onload = function() {
 // });
 
 
-//code for to change to opacity of the bouncing arrow on the homepage
-//source: https://codepen.io/bewley/pen/revRQv
-$(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
-  //250 is fade pixels
-});
+
+
 
 
 //***start javascript to overlay on images on homepage and project page***//
@@ -431,6 +427,15 @@ function overlayRem(){
 }
 //***end javascript to overlay on images on homepage***//
 
+
+//code for to change to opacity of the bouncing arrow on the homepage
+//source: https://codepen.io/bewley/pen/revRQv
+
+$(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+  //250 is fade pixels
+});
+
 //turning bouncing arrow into a scroll button
 $(document).ready(function (){
   $("#scroll").click(function (){
@@ -444,6 +449,15 @@ $(document).ready(function (){
   $("#scroll2").click(function (){
     $('body').animate({
       scrollTop: $("#scrollhere2").offset().top
+      }, 2000);
+  });
+});
+
+$(document).ready(function (){
+  $("#anat_intro").click(function (){
+    console.log("miao");
+    $('body').animate({
+      scrollTop: $("#anat_intro_here").offset().top
       }, 2000);
   });
 });
