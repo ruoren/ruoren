@@ -1,9 +1,8 @@
-.img-fluid. max-width: 80%;
 
-p {
+body {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 19px;
-  line-height: 20pt;
+  font-size: 1rem;
+  line-height: 30pt;
   letter-spacing: .8px;
   color:#1a1b1c;
 }
@@ -247,12 +246,16 @@ i {
   border-radius: 100%;
 }
 
-.carousel-indicators-black{
-  background-color: black;
+.indic-black li{
+  background-color: #5C657C;
 }
 
-.carousel-control-next-icon {
-url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
+.next-icon-black {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='5C657C' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.prev-icon-black {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='5C657C' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
 }
 
 /*This creates the hover effect with the new image*/
@@ -374,8 +377,8 @@ body {
         top:0;
         bottom:0;
         z-index: 1;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 90px;
+        padding-right: 70px;
     }
 
     .abs-left {
@@ -384,8 +387,8 @@ body {
         top:0;
         bottom:0;
         z-index: 1;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 70px;
+        padding-right: 90px;
     }
 
     .of {
@@ -396,4 +399,14 @@ body {
 
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #E3BFC9 50%);
+}
+
+.spanimg {
+  left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+	right: 50%;
+	width: 100vw;
 }
