@@ -492,8 +492,50 @@ $(".card1").hover(function(){
     });
 });
 
+// only for off grid images
+// $('#original_l').css('min-height', $("#original_r").height());
+// $('#redesign_r').css('min-height', $("#redesign_l").height());
+// console.log($("#original_r").height());
+// console.log($("#original_l").height());
 
-$('#original_l').css('min-height', $("#original_r").height());
-$('#redesign_r').css('min-height', $("#redesign_l").height());
-console.log($("#original_r").height());
-console.log($("#original_l").height());
+$(function () {
+  $('.tlt').textillate();
+});
+
+$('.tlt').textillate({
+  in: {
+    // set the effect name
+    effect: 'fadeInUp',
+
+    // set the delay factor applied to each consecutive character
+    delayScale: 1.5,
+
+    // set the delay between each character
+    delay: 50,
+
+    // set to true to animate all the characters at the same time
+    sync: true,
+
+    // randomize the character sequence
+    // (note that shuffle doesn't make sense with sync = true)
+    shuffle: false,
+
+    // reverse the character sequence
+    // (note that reverse doesn't make sense with sync = true)
+    reverse: false,
+
+    // callback that executes once the animation has finished
+    callback: function () {}
+  },
+
+  // out animation settings.
+  out: {
+    effect: 'fadeInDown',
+    delayScale: 1.5,
+    delay: 50,
+    sync: true,
+    shuffle: false,
+    reverse: false,
+    callback: function () {}
+  },
+});
