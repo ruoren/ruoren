@@ -402,14 +402,16 @@ window.onload = function() {
 
 
 //***start javascript to overlay on images on homepage and project page***//
-function textOverlay(){
-  document.getElementById("textoverlay").textContent="ABOUT ME";
-  document.getElementById("mypic").style.filter="saturate(20%) brightness(40%) contrast(94%)";
+function textOverlay(ele){
+  var id = ele.id;
+  document.getElementById(id).style.filter="saturate(20%) brightness(40%) contrast(94%)";
+  document.getElementById(id).parentElement.children[1].style.visibility = "visible";
 }
 
-function textOverlayRem(){
-  document.getElementById("textoverlay").textContent="";
-  document.getElementById("mypic").style.filter="saturate(100%) brightness(100%) contrast(100%)";
+function textOverlayRem(ele){
+  var id = ele.id;
+  document.getElementById(id).style.filter="saturate(100%) brightness(100%) contrast(100%)";
+  document.getElementById(id).parentElement.children[1].style.visibility  = "hidden";
 }
 
 function overlay(){
